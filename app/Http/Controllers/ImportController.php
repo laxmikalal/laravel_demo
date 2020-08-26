@@ -44,18 +44,8 @@ public function __construct()
                 }
             }
         }
-
-    //Return our import finished message
-      $message = 'Device data imported successfully'; //$this->returnMessage($validate, $request);
-              return redirect()->route('devices.index')
+        
+        return redirect()->route('devices.index')
                         ->with('success','Device imported successfully');
     }
-
-
-
-
-
-
-
-
 }
